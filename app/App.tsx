@@ -14,9 +14,9 @@ export const App = () => {
   const loggedIn = useAppSelector(isLoggedInSelector);
   const scheme = useColorScheme();
 
-  useEffect(() => {
-    console.log("Logged In: ", loggedIn);
-  }, [loggedIn]);
+  //   useEffect(() => {
+  //     console.log("Logged In: ", loggedIn);
+  //   }, [loggedIn]);
 
   return (
     <NavigationIndependentTree>
