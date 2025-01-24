@@ -4,6 +4,7 @@ import { persistStore, persistReducer } from "redux-persist";
 import ExpoFileSystemStorage from "redux-persist-expo-filesystem";
 import { userSlice } from "./user/userSlice";
 import { coreSlice } from "./core/coreBuilder";
+import { barsReducer } from "./bars/barsBuilder";
 
 const persistConfig = {
   key: "root",
@@ -16,6 +17,7 @@ export const store = configureStore({
   reducer: {
     user: persistedUserReducer,
     core: coreSlice,
+    bars: barsReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

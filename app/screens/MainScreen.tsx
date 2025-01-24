@@ -12,7 +12,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import MapView, { PROVIDER_GOOGLE } from "react-native-maps";
 import { useCustomThemeColors } from "../hooks/useCustomThemeColors";
 import { MenuButtons } from "../components/MenuButtons";
-// import { MapSection } from "../sections/MapSection";
+import { MapSection } from "../sections/MapSection";
 import { Ttheme } from "../themes";
 import { useNavigation } from "@react-navigation/native";
 import { MapStackNavigation } from "../types/navigationTypes";
@@ -49,8 +49,8 @@ export const MainScreen = () => {
           colors={[theme.linearGradient, theme.pageColor]}
           style={linearGradient}
         />
-        {/* <MapSection /> */}
-        <Text>Map Section</Text>
+        <MapSection />
+        {/* <Text>Map Section</Text> */}
       </View>
       <MenuButtons />
     </View>
